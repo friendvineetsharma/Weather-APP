@@ -15,7 +15,7 @@ export const WeatherViewer = ({ cityData }) => {
     setLoading(true);
     axios
       .get(
-        `http://dataservice.accuweather.com/currentconditions/v1/${cityData.Key}?apikey=ICfOrVGI3ofdnGODMlLrRMwyPbISOCdO`
+        `https://dataservice.accuweather.com/currentconditions/v1/${cityData.Key}?apikey=ICfOrVGI3ofdnGODMlLrRMwyPbISOCdO`
       )
       .then((res) => {
         setData(res.data[0]);
